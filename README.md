@@ -21,7 +21,7 @@ I am currently learning Python through the :contentReference[oaicite:0]{index=0}
 - Virtual Environments
 - Python Internals
 - Reference Counting
-- Projects & Problem Solving
+- Problem Solving
 
 
 
