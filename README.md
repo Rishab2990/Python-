@@ -2,7 +2,7 @@
 
 This repository contains my Python learning journey, practice code, notes, experiments, and projects.
 
-I am currently learning Python through the :contentReference[oaicite:0]{index=0} playlist while focusing on both practical coding and understanding Python concepts deeply.
+I am currently learning Python focusing on both practical coding and understanding Python concepts deeply.
 
 ## 📚 Topics Covered
 
