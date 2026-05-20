@@ -61,3 +61,10 @@ sentence = "Hello World! Welcome to Python programming."
 print(sentence.split()) # this code will split the sentence into a list of words based on whitespace by default
 print(sentence.split("o")) # this code will split the sentence into a list of words based on the character "o" as a delimiter
 #In this code after printing statement python immediately delete the list created by split() method from memory because we have 
+
+
+#find() method
+print(sentence.find("World")) 
+
+#count() method
+print(sentence.count("o"))
