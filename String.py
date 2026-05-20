@@ -1,3 +1,6 @@
+#Python String is sequence of character and it is immutable in nature which means 
+# we cannot change the value of string once it is created.
+
 name = "John Doe"
 
 #Slicing a string
@@ -35,3 +38,26 @@ print(name[-2:-5:-1]) # for this code the output will be 'oD' because when the c
 print(name[-5:-2:1]) # this code is same as previous one "line number 25" because this code and previous code do same work but 
 # in this we just defined the step in positive direction when we not defined steps then by default it takes steps in positive directoin 
 
+print(name[0:-5])
+
+print(name.upper()) # this code will convert all the characters of the string into uppercase letters
+print(name.lower()) # this code will convert all the characters of the string into lowercase letters
+
+
+#strip()
+random_string = "   Hello World!   "
+print(random_string.strip()) # this code will remove the leading and trailing whitespace from the string
+
+#In this code internally in memory when we create variable random_string and assign value that time new variable create and start point to the 
+#the object in memory and after this when we code print function then it use new memory space because string is immutable in python
+#so when we use strip() method it will create new object in memory but after printing statement python immediately delete that
+#object from memory because we have not assigned a variable to the new object created by strip() method .
+
+#replace() method
+print(random_string.replace("World!","Programmers"))
+
+#python splitter() method
+sentence = "Hello World! Welcome to Python programming."
+print(sentence.split()) # this code will split the sentence into a list of words based on whitespace by default
+print(sentence.split("o")) # this code will split the sentence into a list of words based on the character "o" as a delimiter
+#In this code after printing statement python immediately delete the list created by split() method from memory because we have 
