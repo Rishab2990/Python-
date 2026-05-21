@@ -94,6 +94,7 @@ print(random.choice(['apple', 'banana', 'cherry', 'date', 'fig', 'grape'])) #Thi
 
 shuffle_list = [1,2,3,4,5,6,7,8,9,10]
 random.shuffle(shuffle_list) #This will randomly shuffle the elements of the list shuffle_list in place, meaning that the original list will be modified to contain the shuffled order of the elements.
+
 print(shuffle_list) #Output: The output will be a randomly shuffled version of the original list [1,2,3,4,5,6,7,8,9,10]. Each time you run this code, the order of the elements in the list will be different due to the random shuffling process.
 
 
