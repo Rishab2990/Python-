@@ -13,3 +13,13 @@ print(tea_varities[1:2])
 # print(new_tea)
 
 print(tea_varities[1:2],"chamomile tea") # this code will replace the element at index 1 with "chamomile tea" and assign the new list to variable new_tea but in this code we are not assigning the new list to any variable so after printing statement python immediately delete the new list from memory because we have not assigned a variable to it.
+
+#Adding element to a list
+tea_varities.append("chamomile tea") # this code will add "chamomile tea" to the end of the list
+print(tea_varities)
+
+#There is multiple way to add element in list 1. append() , 2. extend() , 3.insert() , 4. concatenation
+
+#insert() method
+new_tea_varities=tea_varities.insert(2,"chamomile tea")
+print(new_tea_varities)

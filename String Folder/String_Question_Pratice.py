@@ -13,3 +13,5 @@ print(name[5:1:-1]) #for this code as a beginner first dry run it on paper and t
 #  
 
 print(name[11::-1])
+
+[]
