@@ -17,21 +17,52 @@ print(tea_varities,"\n")
 
 
 #There is multiple way to add element in list 1. append() , 2. extend() , 3.insert() , 4. concatenation
-#Interesting thing about list how it affect memory when perform certain operations on it .
+#slice()  , concatenation() ,  and copy()  of list create a new list with different memory address and original list remain unchanged
 
 animal_names_list = ["cat", "dog", "rabbit", "hamster","tiger","lion"]
-print("original list memory address : ",id(animal_names_list) , "\n")
+print("original list memory address : " ,animal_names_list, "\n", "Original list memory address:", id(animal_names_list) , "\n")
 
 slice_list = animal_names_list[2:5]  
-print("slice list :  ",slice_list  )   
-print("slice list memory address :",id(slice_list) ,  "\n\n")
+print("slice list :  ", slice_list , "\n"  "Slice list memory address : " , id(slice_list) ,  "\n\n")
+
 
 concatenated_list = animal_names_list+["giraffe", "elephant"]
-print("concatenated list :", concatenated_list,)  
-print("concatenated list memory address ", id(concatenated_list), "\n")
+print("concatenated list :", concatenated_list, "\n"  "concatenated list memory address : ",id(concatenated_list), "\n")  
 
 
-print("copied list :",id(animal_names_list.copy()) , "\n\n") 
+copied_list = animal_names_list.copy()
+print("copied list :",copied_list , "\n"  "copied list memory address : ",id(copied_list) , "\n")
 
-#check the memory address of the animal_names_list 
-print("memory address :",id(animal_names_list))  # this will print the memory address of the animal_names_list
+
+
+#In-place modification of list does not create a new list and it modifies the original/existing list and 
+#the memory address of the list remain unchanged
+
+# Slice operations can do two things depending on how we use them:
+# 1. Create a new list
+# 2. Modify an existing list
+
+# When we modify a list using slicing,
+# Python replaces the elements in the specified index range.
+# The old elements in that range are removed,
+# and the new elements are inserted at that position
+# in the original list.
+# append and insert method also modify the original list and change the size of the list but not delete the original list it only add new element to the list and memory address of the list remain unchanged 
+
+birds_list = ["sparrow", "eagle", "parrot", "crow", "pigeon"]
+print("original list memory address : ",id(birds_list) , "\n")
+
+
+# When we print the result of append() , insert() , slice() method it will return None because these methods modify the original list in-place and do not return a new list and because of that print statement return None
+
+new_birds_append_list = birds_list.append("owl")
+print("new_birds_append_list :" , new_birds_append_list , id(new_birds_append_list) , "\n")
+
+new_birds_insert_list = birds_list.insert(2,"peacock")
+print("new_birds_insert_list :" , new_birds_insert_list , id(new_birds_insert_list) , "\n") 
+
+# new_birds_list[1:4] = ["hawk", "falcon", "vulture"]
+# print("new_birds_slice_list :" , new_birds_list , id(new_birds_list) , "\n")
+
+
+
