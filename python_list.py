@@ -17,7 +17,7 @@ print(tea_varities,"\n")
 
 
 #There is multiple way to add element in list 1. append() , 2. extend() , 3.insert() , 4. concatenation
-#slice()  , concatenation() ,  and copy()  of list create a new list with different memory address and original list remain unchanged
+#copy()  of list create a new list with different memory address and original list remain unchanged
 
 animal_names_list = ["cat", "dog", "rabbit", "hamster","tiger","lion"]
 print("original list memory address : " ,animal_names_list, "\n", "Original list memory address:", id(animal_names_list) , "\n")
@@ -49,7 +49,7 @@ print("copied list :",copied_list , "\n"  "copied list memory address : ",id(cop
 # in the original list.
 # append and insert method also modify the original list and change the size of the list but not delete the original list it only add new element to the list and memory address of the list remain unchanged 
 
-# When we print the result of append() , insert() , slice() method it will return None because these methods modify the original list in-place and do not return a new list and because of that print statement return None
+# When we print the result of append() , insert()  method it will return None because these methods modify the original list in-place and do not return a new list and because of that print statement return None
 
 birds_list = ["sparrow", "eagle", "parrot", "crow", "pigeon"]
 print("original birds_list memory address : ",id(birds_list) , "\n")
@@ -61,7 +61,7 @@ print(id(birds_list) , "\n")
 birds_list.insert(2,"peacock") #insert "peacock" at index 2 
 print(id(birds_list) , "\n")
 
-birds_list[2:5] = ["peacock", "owl", "hawk"]  #slice operation to modify the list
+birds_list[2:5] = ["peacock", "owl", "hawk"]  
 print(id(birds_list) , "\n")
 
 
