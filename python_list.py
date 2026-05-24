@@ -49,20 +49,22 @@ print("copied list :",copied_list , "\n"  "copied list memory address : ",id(cop
 # in the original list.
 # append and insert method also modify the original list and change the size of the list but not delete the original list it only add new element to the list and memory address of the list remain unchanged 
 
-birds_list = ["sparrow", "eagle", "parrot", "crow", "pigeon"]
-print("original list memory address : ",id(birds_list) , "\n")
-
-
 # When we print the result of append() , insert() , slice() method it will return None because these methods modify the original list in-place and do not return a new list and because of that print statement return None
 
-new_birds_append_list = birds_list.append("owl")
-print("new_birds_append_list :" , new_birds_append_list , id(new_birds_append_list) , "\n")
+birds_list = ["sparrow", "eagle", "parrot", "crow", "pigeon"]
+print("original birds_list memory address : ",id(birds_list) , "\n")
 
-new_birds_insert_list = birds_list.insert(2,"peacock")
-print("new_birds_insert_list :" , new_birds_insert_list , id(new_birds_insert_list) , "\n") 
 
-# new_birds_list[1:4] = ["hawk", "falcon", "vulture"]
-# print("new_birds_slice_list :" , new_birds_list , id(new_birds_list) , "\n")
+birds_list.append("peacock") #append "peacock" to the end of the list and modify the original list but memory address remain unchanged
+print(id(birds_list) , "\n")
+
+birds_list.insert(2,"peacock") #insert "peacock" at index 2 
+print(id(birds_list) , "\n")
+
+birds_list[2:5] = ["peacock", "owl", "hawk"]  #slice operation to modify the list
+print(id(birds_list) , "\n")
+
+
 
 
 
