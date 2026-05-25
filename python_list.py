@@ -65,6 +65,17 @@ birds_list[2:5] = ["peacock", "owl", "hawk"]
 print(id(birds_list) , "\n")
 
 
+# Loop through the list
+
+for tea in tea_varities:
+    print(tea)
+
+
+
+#Removing element from the list
+fruits_list = ["apple", "banana" , "orange" , "grapes" ,"kiwi", "blueberry", "blackberry","mango", "papaya", "watermelon"]
+
+
 
 
 
