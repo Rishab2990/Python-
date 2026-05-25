@@ -74,7 +74,8 @@ for tea in tea_varities:
 
 #Removing element from the list
 fruits_list = ["apple", "banana" , "orange" , "grapes" ,"kiwi", "blueberry", "blackberry","mango", "papaya", "watermelon"]
-
+fruits_list.remove("orange")
+print(fruits_list)
 
 
 
