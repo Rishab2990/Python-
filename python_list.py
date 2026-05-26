@@ -65,13 +65,26 @@ birds_list[2:5] = ["peacock", "owl", "hawk"]
 print(id(birds_list) , "\n")
 
 
+print()
+
 # Loop through the list
 
 for tea in tea_varities:
     print(tea)
 
+print()   # for space
+
+for tea_count in tea_varities:
+    print(tea_count, tea_varities.index(tea_count))
     
 
+print()   # for space
+
+for tea_count1 in tea_varities:
+    print(tea_count1, end="-")  # end=" " is used to print the elements in the same line with space in between
+
+
+print()   # for space
 
 
 #Removing element from the list
@@ -81,7 +94,7 @@ print(fruits_list)
 
 
 #pop method is used to remove the specified index element from the list
-fruits_list.pop(2)
+#fruits_list.pop(2)
 
 
 
