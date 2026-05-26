@@ -70,6 +70,8 @@ print(id(birds_list) , "\n")
 for tea in tea_varities:
     print(tea)
 
+    
+
 
 
 #Removing element from the list
@@ -77,6 +79,9 @@ fruits_list = ["apple", "banana" , "orange" , "grapes" ,"kiwi", "blueberry", "bl
 fruits_list.remove("orange")
 print(fruits_list)
 
+
+#pop method is used to remove the specified index element from the list
+fruits_list.pop(2)
 
 
 
