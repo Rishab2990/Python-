@@ -92,9 +92,18 @@ fruits_list = ["apple", "banana" , "orange" , "grapes" ,"kiwi", "blueberry", "bl
 fruits_list.remove("orange")
 print(fruits_list)
 
+#pop method is used to remove the specified index element from the list  
+# modify original list , return deleted value if we assigned a variable , does not create new object 
+fruits_list.pop() # if we don't specify the index it will remove the last element from the list
+print(fruits_list) # it return the removed element if we assign a variable to the pop method that means when pop method remove the element from the list it will saved to the variable as a return value 
 
-#pop method is used to remove the specified index element from the list
-#fruits_list.pop(2)
 
+del fruits_list[2]  # removes the element at index 2    #does not return any value , only modify , does not create new object
+print(fruits_list)
 
+## result = del fruits_list[2]  # this code will give syntax error because del is a statement and it does not return any value so we cannot assign it to a variable
 
+del fruits_list 
+print(fruits_list)  # this line will throw an error because we have deleted the entire list and trying to access if after deletion
+                     #Error :   NameError: name 'fruits_list' is not defined
+                     #So yes this is interesting concept when we try to understand the what happen under the hood 
