@@ -92,6 +92,7 @@ fruits_list = ["apple", "banana" , "orange" , "grapes" ,"kiwi", "blueberry", "bl
 fruits_list.remove("orange")
 print(fruits_list)
 
+
 #pop method is used to remove the specified index element from the list  
 # modify original list , return deleted value if we assigned a variable , does not create new object 
 fruits_list.pop() # if we don't specify the index it will remove the last element from the list
