@@ -15,6 +15,23 @@ chai_types["Green"] = "Fresh"           # Assignment statement: updates the exis
 print(chai_types)
 
 
-#Print dictionary using loops
+# Print dictionary using loops
+#Important - : When we run Loop over a dictionary and think the variable will receieve both key and value from dictionary is wrong because Python is designed so that standard loop over a dictionary iterates over it's key means when we print direct loop variable wer receive only key in answer .
+
+#If we need where loop access both key and value at a same time then we must explicitly use .item() method  
 for chai in chai_types:
-    print(chai)
+    print(chai_types[chai])                               #print(chai) only print Key 
+
+
+#Using .item() method
+for chai_data in chai_types.items():
+    print(chai_data )
+
+
+print()         # for space
+
+for key , value in chai_types.items():
+    print("new way : ", key,value)
+
+#Check the length
+print(len(chai_types))
