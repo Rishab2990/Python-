@@ -35,3 +35,8 @@ for key , value in chai_types.items():
 
 #Check the length
 print(len(chai_types))
+
+#add a new key value in dictionary
+
+chai_types["Earl Grey"] = "Citrus"
+print(chai_types)
