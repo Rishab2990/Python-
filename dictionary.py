@@ -40,3 +40,22 @@ print(len(chai_types))
 
 chai_types["Earl Grey"] = "Citrus"
 print(chai_types)
+
+
+#Access single dictionary key and value
+print(chai_types.items())
+
+for key , value in chai_types.items():
+    print(key , value)
+
+
+# Using get method   // Get method is used to fetch one value at a time not like a item method where we get complete dictionary 
+print("Masala chai type value :",chai_types.get("Masala"))     # Return the value for key if key is in the dictionary, else defaul None
+
+print(chai_types.keys())   #it does not take arguments and it does return Return a set-like object providing a view on the dict's keys.
+
+
+#Value Method 
+
+chai_value = chai_types.values()
+print(chai_value)
