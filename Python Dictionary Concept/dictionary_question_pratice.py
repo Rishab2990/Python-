@@ -85,10 +85,36 @@ for longest_key , longest_value in student.items():
 # print("Longest Key : " , store_key)
 
 store_key = ""
-for longest_keys in student.keys():
+for longest_keys in student.values():
     if(len(longest_keys) > len(store_key)):
         store_key = longest_keys
 print("Longest key :",store_key)
 
 
+
+
 # Q. Find highest score.
+marks = {
+    "Math":80,
+    "Science":95,
+    "English":70
+}
+highest_score = 0
+for score in marks.values():
+    if(score>highest_score):
+        highest_score = score
+print("Highest Score : ",highest_score)
+
+
+#we can perform same operation with using 
+print("Highest Score using max() function : ",max(marks.values()))  # INFO: max() function is used to find maximum value in dictionary.
+
+# Another way in which we use extra variable in loop to find highest score.
+Highest_score = 0 
+Highest_subject = ""
+for subject , Score in marks.items():
+    if(Score > Highest_score):
+        Highest_score = Score
+        Highest_subject = subject
+print("Highest Score using extra variable in loop : ",Highest_score , Highest_subject)
+
