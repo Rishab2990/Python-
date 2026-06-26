@@ -55,10 +55,6 @@ print("Masala chai type value :",chai_types.get("Masala"))     # Return the valu
 print(chai_types.keys())   #it does not take arguments and it does return Return a set-like object providing a view on the dict's keys.
 
 
-#Value Method 
-
-chai_value = chai_types.values()
-print("Value Method : ",chai_value)
 
 
 

@@ -118,3 +118,14 @@ for subject , Score in marks.items():
         Highest_subject = subject
 print("Highest Score using extra variable in loop : ",Highest_score , Highest_subject)
 
+
+# Find average marks. 
+total_number = 0
+for score_marks in marks.values():
+    total_number += score_marks
+total_subjects = len(marks)
+average_marks = total_number / total_subjects
+print("Average Marks :" , average_marks)
+
+
+
