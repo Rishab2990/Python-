@@ -14,3 +14,8 @@ print(len(fruit))
 #Print every element using a for loop.
 for i in fruit:
     print(i)
+
+#Print every alternate element.
+for i in fruit:
+    print(i)
+    i+=1
